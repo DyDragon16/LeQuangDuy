@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỹ năng - Lê Quang Duy</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #232526, #414345);
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        .skill-category {
+            margin-bottom: 40px;
+        }
+        .skill-bar {
+            background: rgba(255,255,255,0.1);
+            height: 30px;
+            border-radius: 15px;
+            margin: 10px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .skill-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            border-radius: 15px;
+            animation: fillBar 2s ease-out;
+        }
+        @keyframes fillBar {
+            from { width: 0; }
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00d2ff;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        h1, h2 { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kỹ năng chuyên môn</h1>
+        
+        <div class="skill-category">
+            <h2>Lập trình</h2>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%">HTML/CSS</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%">JavaScript</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 75%">Python</div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h2>Công cụ</h2>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 88%">VS Code</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 82%">Git</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 78%">Adobe Photoshop</div>
+            </div>
+        </div>
+
+        <a href="index.htm" class="back-button">Quay về trang chủ</a>
+    </div>
+</body>
+</html>

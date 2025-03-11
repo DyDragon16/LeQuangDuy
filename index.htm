@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Quang Duy - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #2196f3, #e91e63);
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem 3rem;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .student-id {
+            color: #666;
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav-buttons {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .nav-button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+        }
+        .nav-button:nth-child(1) { background: #4CAF50; }
+        .nav-button:nth-child(2) { background: #2196F3; }
+        .nav-button:nth-child(3) { background: #FF9800; }
+        .nav-button:nth-child(4) { background: #E91E63; }
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lê Quang Duy</h1>
+        <div class="student-id">MSSV: 2180600211</div>
+        <div class="nav-buttons">
+            <a href="education.htm" class="nav-button">Học vấn</a>
+            <a href="work.htm" class="nav-button">Công việc</a>
+            <a href="hobbies.htm" class="nav-button">Sở thích</a>
+            <a href="skills.htm" class="nav-button">Kỹ năng</a>
+        </div>
+    </div>
+</body>
+</html>
